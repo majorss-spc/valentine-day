@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Guggu ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- Music Toggle -->
+    <div id="music-toggle" class="music-control" onclick="toggleMusic()">🔇 Click for Music</div>
+
+    <!-- PAGE 1: Valentine Proposal -->
+    <section id="page1" class="page active">
+        <h1>Guggu, will you be my Valentine? 💖</h1>
+        <div class="photo-placeholder">🥺👉👈</div>
+        
+        <div class="buttons">
+            <button id="yes-btn" class="btn btn-yes">YES 💘</button>
+            <button id="no-btn" class="btn btn-no">NO 🙈</button>
+        </div>
+
+        <div id="reaction-container" class="hidden">
+            <h2 class="question-text">WOWWWWWW 😭💖 I’M SO LUCKY!!!</h2>
+            <img src="https://media1.tenor.com/m/Z6mG-qaf4V0AAAAC/mochi-peach-cat-love.gif" alt="Excited" style="max-width: 300px; border-radius: 10px; margin: 20px;">
+            <br>
+            <button id="next-btn-page1" class="btn btn-yes" onclick="navigateTo('page2')">Go Ahead My Love 💞</button>
+        </div>
+    </section>
+
+    <!-- PAGE 2: Our Story -->
+    <section id="page2" class="page">
+        <h2>From The First Day I Met You, Guggu… ✨</h2>
+        
+        <div class="story-content">
+            <p>From the moment I saw you, I knew there was something special. Your beauty captivated me instantly. 🌸</p>
+            <p>You made everything feel magical. Every smile, every look...</p>
+        </div>
+
+        <div class="story-content">
+            <h3>Our First Kiss 🎬💋</h3>
+            <p>PVR Cinemas & Pavilion Mall... Do you remember?</p>
+            <div class="photo-placeholder">💑</div>
+            <p>Holding your hand and kissing you for the first time... I felt blessed. 🥹💖</p>
+            <p>In that moment, I felt complete. Grateful to the universe for you.</p>
+        </div>
+
+        <button class="btn btn-yes" onclick="navigateTo('page3')">See Our Future 💍</button>
+    </section>
+
+    <!-- PAGE 3: Our Future -->
+    <section id="page3" class="page">
+        <h2>Our Forever Plans, Guggu 💍👨‍👩‍👧‍👦</h2>
+
+        <div class="future-content">
+            <h3>The Wedding 💒</h3>
+            <p>2031. It's happening. Don't worry about a thing, my love.</p>
+            <p>It's going to be the most beautiful day of our lives.</p>
+        </div>
+
+        <div class="future-content">
+            <h3>Our Family 🏡</h3>
+            <p>A happy life filled with love...</p>
+            <p>Just us and our little ones:</p>
+            <h2>Vasu & Siyona 🧸✨</h2>
+            <div class="photo-placeholder">👶❤️👶</div>
+            <p>Our complete family of four.</p>
+        </div>
+
+        <button class="btn btn-yes" onclick="navigateTo('page4')">My Promise To You ♾️</button>
+    </section>
+
+    <!-- PAGE 4: Closing -->
+    <section id="page4" class="page">
+        <h1>Love Beyond Lifetimes 🌌</h1>
+        
+        <div class="story-content" style="background: rgba(0,0,0,0.3); color: white;">
+            <p>“In every janam, I want to live with you”</p>
+            <p>“I choose you in this life and every life after”</p>
+            <p>“You are not just my Valentine… you are my wife, my forever”</p>
+        </div>
+
+        <h1 style="color: #ff7eb3; text-shadow: 0 0 20px #ff7eb3;">I LOVE YOU GUGGU ♾️❤️</h1>
+        
+        <div class="photo-placeholder" style="border-color: #ff7eb3;">💑</div>
+        
+        <button class="btn btn-yes" onclick="alert('Happy Valentine\'s Day My Love! ❤️')">Happy Valentine's Day! 💌</button>
+        <br><br>
+        <button class="btn" style="font-size: 0.8rem; opacity: 0.7;" onclick="navigateTo('page1')">Start Over ↺</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
